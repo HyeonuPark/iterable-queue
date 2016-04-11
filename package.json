@@ -1,6 +1,6 @@
 {
   "name": "iterable-queue",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple task queue with ES6 iterable interface",
   "main": "bin/index.js",
   "scripts": {
