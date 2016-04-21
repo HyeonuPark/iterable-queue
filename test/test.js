@@ -21,6 +21,16 @@ describe('IterableQueue', () => {
     expect([...IQ([4, 5, 6])]).to.deep.equal([4, 5, 6])
   })
 
+  it('should treat given non-iterable as a single-element iterable', () => {
+    const obj = {}
+    expect([...IQ(obj)])
+      .to.lengthOf(1)
+      .and.have.property(0, obj)
+    expect([...IQ(42)])
+      .to.lengthOf(1)
+      .and.have.property(0, 42)
+  })
+
   it('should be possible to append internal queue', () => {
     const queue = IQ([4, 5])
     queue.add(6)

@@ -31,5 +31,8 @@
     "babel-register": "^6.7.2",
     "chai": "^3.5.0",
     "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "iterator-util": "^1.2.0"
   }
 }
